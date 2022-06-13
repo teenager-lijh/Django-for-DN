@@ -32,9 +32,13 @@ def test_object_template_view(request):
 
 
 def test_template_view(request):
+    def say_hello():
+        return "hello, my name is zhe zhe :)"
+
     data = {
         'first_value': 111,
-        'second_value': 222
+        'second_value': 222,
+        'say_hello': say_hello
     }
 
     return render(request, 'index.html', data)

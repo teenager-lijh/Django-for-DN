@@ -37,7 +37,9 @@ urlpatterns = [
     # EXAMPLE 3
     path('request/', test_request_view),
 
+    # EXAMPLE 4
     path('test-object-template-view/', test_object_template_view),
 
+    # EXAMPLE 5
     path('test-template-view/', test_template_view)
 ]
